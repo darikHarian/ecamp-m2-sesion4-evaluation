@@ -3,9 +3,10 @@
 }
 
 body {
-    width: 100%;
+    width: 200vw;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -13,29 +14,33 @@ a {
     color: #fff;
 }
 
+/* CABECERA */
+
 header { 
     background: url("./../img/fondo.jpg");
-    background-size: calc(34vw);
-    height: 15.5vh;
+    background-size: cover;
+    height: 30vh;
 }
 
 header img {
-    width: 6.7rem;
+    width: 5rem;
 }
 
 header ul {
-   padding: 0;
-}
+    list-style: none;
+    line-height: 1.5em;
+    padding: 0 1em;
+ }
 
 header ul li {
-    display: inline-block;
     color: #fff;
-    padding: 0 4em 0 0;
 }
+
+/* PRINCIPAL */
 
 main {
     text-align: center;
-    padding: 0 10em;
+    padding: 0 4em;
 }
 
 main h1 { 
@@ -49,55 +54,45 @@ main h2 {
     margin-bottom: 5em;
 }
 
-#cards {
-    display: inline-flex;
-}
+/* TARJETAS */
 
 .card {
-    display: block;
+    padding-bottom: 3em;
 }
 
 .card img {
-    width: 20vw;
+    width: 130vw;
     height: 20vh;
 }
 
+.card h4 {
+    margin: 0 .2em;
+}
+
 .card p {
-    padding: 0 4em;
+    margin-top: 0;
 }
 
-/* FORMULARIOS */
+/* FORMULARIOS OCULTOS */
 
-form {
-    background-color: #444;
-    color: #fff;
-    width: 20vw;
-    border-radius: 7px;
-    margin: 5em auto 0;
+#forms {
+    display: none;
 }
 
-form h2 {
-    padding-top: 1em;
-    text-decoration: none;
-    margin-bottom: 1em;
-}
-
-form button {
-    margin-bottom: 1em;
-}
-
+/* PIE DE PÁGINA */
+    
 footer {
+    position:relative;
+    bottom: -3rem;
     display: flex;
     justify-content: center;
     align-items:center;
-    background: url("./../img/fondo.jpg");
-    background-size: calc(100vw);
-    height: 40vh;
+    background-color: black;
+    height: 30vh;
     color: #fff;
 }
 
 footer p {
-    padding-top: 4em;
     font-size: 20px;
 }
 
@@ -110,5 +105,105 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
-
+   
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    header { 
+        background: url("./../img/fondo.jpg");
+        background-size: calc(34vw);
+        height: 20vh;
+    }
+    
+    header img {
+        width: 5rem;
+    }
+    
+    header ul li {
+        color: #fff;
+    }
+    
+    header ul {
+       padding: 0;
+    }
+    
+    header ul li {
+        display: inline-block;
+        color: #fff;
+        padding: 0 4em 0 0;
+    }
+    
+    main {
+        text-align: center;
+        padding: 0 10em;
+    }
+    
+    main h1 { 
+        color: gray;
+        font-size: 70px;
+    }
+    
+    main h2 {
+        text-decoration: overline;
+        line-height: 0;
+        margin-bottom: 5em;
+    }
+    
+    /* TARJETAS */
+    
+    #cards {
+        display: inline-flex;
+    }
+    
+    .card {
+        display: block;
+    }
+    
+    .card img {
+        width: 20vw;
+        height: 20vh;
+    }
+    
+    .card p {
+        padding: 0 4em;
+    }
+    
+    /* FORMULARIOS */
+    
+    form {
+        background-color: #444;
+        color: #fff;
+        width: 20vw;
+        border-radius: 7px;
+        margin: 5em auto 0;
+    }
+    
+    form h2 {
+        padding-top: 1em;
+        text-decoration: none;
+        margin-bottom: 1em;
+    }
+    
+    form button {
+        margin-bottom: 1em;
+    }
+    
+    /* PIE DE PÁGINA */
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: url("./../img/fondo.jpg");
+        background-size: calc(100vw);
+        height: 40vh;
+        color: #fff;
+    }
+    
+    footer p {
+        padding-top: 4em;
+        font-size: 20px;
+    }
 }
