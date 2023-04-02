@@ -134,10 +134,96 @@ footer p {
         height: 15vh;
     }
 
+    /* PIE DE PÁGINA */
+
+    footer {
+        background: url("./../img/fondo.jpg");
+        background-size: calc(120vw);
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
 
+    /* CABECERA */
+
+    header {
+        background-size: calc(40vw);
+        height: 20vh;;
+    }
+
+    header img {
+        width: 2.5rem;
+    }
+
+    header ul {
+        margin-top: -.5em;
+        line-height: .8em;
+    }
+
+    header ul li, header ul li a {
+        font-size: 9px;
+    }
+
+    /* PRINCIPAL */
+
+    main {
+        margin: -1em 0 1em;
+    }
+
+    main h1 {
+        font-size: 50px;
+        padding: 0 5em;
+    }
+
+    /* TARJETAS */
+
+    #cards {
+        display: inline-flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .card:last-child {
+        width: 65vw;
+    }
+
+    .card:last-child img {
+        width: 100%;
+    }
+
+    /* FORMULARIOS */
+
+    #forms {
+        display: block;
+    }
+
+    form {
+        background-color: #444;
+        color: #fff;
+        width: 68vw;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    form button {
+        margin-bottom: .5em;
+    }
+
+    /* PIE DE PÁGINA */
+
+    footer {
+        background-size: calc(100vw);
+        bottom: 0;
+        height: 30vh;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
