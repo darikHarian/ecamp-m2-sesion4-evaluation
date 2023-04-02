@@ -3,15 +3,10 @@
 }
 
 body {
-    width: 200vw;
+    width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
 }
 
 /* CABECERA */
@@ -19,58 +14,67 @@ a {
 header { 
     background: url("./../img/fondo.jpg");
     background-size: cover;
-    height: 30vh;
+    height: 15vh;
 }
 
 header img {
-    width: 5rem;
+    width: 2rem;
 }
 
 header ul {
     list-style: none;
-    line-height: 1.5em;
-    padding: 0 1em;
+    line-height: 1.1em;
+    padding: 0 .7em;
+    margin-top: -.7em
  }
 
 header ul li {
     color: #fff;
+    font-size: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
 }
 
 /* PRINCIPAL */
 
 main {
     text-align: center;
-    padding: 0 4em;
+    padding: 2em 0 0;
 }
 
 main h1 { 
     color: gray;
-    font-size: 70px;
+    font-size: 50px;
 }
 
-main h2 {
+main h3 {
     text-decoration: overline;
     line-height: 0;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 /* TARJETAS */
 
 .card {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .card img {
-    width: 130vw;
-    height: 20vh;
+    width: 70vw;
+    height: 10vh;
 }
 
-.card h4 {
+.card h5 {
     margin: 0 .2em;
 }
 
 .card p {
     margin-top: 0;
+    font-size: 10px;
 }
 
 /* FORMULARIOS OCULTOS */
@@ -88,12 +92,12 @@ footer {
     justify-content: center;
     align-items:center;
     background-color: black;
-    height: 30vh;
+    height: 15vh;
     color: #fff;
 }
 
 footer p {
-    font-size: 20px;
+    font-size: 12px;
 }
 
 @media only screen and (min-width: 768px) {
