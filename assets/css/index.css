@@ -1,0 +1,114 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header { 
+    background: url("./../img/fondo.jpg");
+    background-size: calc(34vw);
+    height: 15.5vh;
+}
+
+header img {
+    width: 6.7rem;
+}
+
+header ul {
+   padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    color: #fff;
+    padding: 0 4em 0 0;
+}
+
+main {
+    text-align: center;
+    padding: 0 10em;
+}
+
+main h1 { 
+    color: gray;
+    font-size: 70px;
+}
+
+main h2 {
+    text-decoration: overline;
+    line-height: 0;
+    margin-bottom: 5em;
+}
+
+#cards {
+    display: inline-flex;
+}
+
+.card {
+    display: block;
+}
+
+.card img {
+    width: 20vw;
+    height: 20vh;
+}
+
+.card p {
+    padding: 0 4em;
+}
+
+/* FORMULARIOS */
+
+form {
+    background-color: #444;
+    color: #fff;
+    width: 20vw;
+    border-radius: 7px;
+    margin: 5em auto 0;
+}
+
+form h2 {
+    padding-top: 1em;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+form button {
+    margin-bottom: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: url("./../img/fondo.jpg");
+    background-size: calc(100vw);
+    height: 40vh;
+    color: #fff;
+}
+
+footer p {
+    padding-top: 4em;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
